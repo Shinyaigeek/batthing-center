@@ -1,0 +1,17 @@
+{
+  "name": "chrome-remote-interface",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "main": "ts-node main.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chrome-remote-interface": "^0.28.2",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.5"
+  }
+}
