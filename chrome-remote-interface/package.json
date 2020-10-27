@@ -2,10 +2,11 @@
   "name": "chrome-remote-interface",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "main": "ts-node main.ts"
+    "main": "node --inspect=1234  main.js --experimental-modules"
   },
+  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
