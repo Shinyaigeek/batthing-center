@@ -1,0 +1,1 @@
+/* eslint-disable */module.exports={languageData:{"plurals":function(n,ord){if(ord)return"other";return"other"}},messages:{"Hello":"\u30A6\u30A7\u30A4\u30FC\u3044","ImShinyai":"\u50D5\u306F\u3057\u306B\u3083\u3044\u3067\u3059","This is Footer":"\u3053\u308C\u304C\u30D5\u30C3\u30BF\u30FC","WhoIFollowing":"\u50D5\u304C\u30D5\u30A9\u30ED\u30FC\u3057\u3066\u308B\u4EBA\u305F\u3061"}};

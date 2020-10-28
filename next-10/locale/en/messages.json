@@ -1,0 +1,38 @@
+{
+  "Hello": {
+    "translation": "Hello!!",
+    "origin": [
+      [
+        "pages/index.tsx",
+        25
+      ]
+    ]
+  },
+  "ImShinyai": {
+    "translation": "I'm Shinyaigeek",
+    "origin": [
+      [
+        "pages/index.tsx",
+        27
+      ]
+    ]
+  },
+  "This is Footer": {
+    "translation": "This is Footer",
+    "origin": [
+      [
+        "components/Footer.tsx",
+        5
+      ]
+    ]
+  },
+  "WhoIFollowing": {
+    "translation": "Who I following",
+    "origin": [
+      [
+        "pages/index.tsx",
+        28
+      ]
+    ]
+  }
+}
