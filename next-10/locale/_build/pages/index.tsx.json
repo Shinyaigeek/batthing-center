@@ -1,0 +1,26 @@
+{
+  "Hello": {
+    "origin": [
+      [
+        "pages/index.tsx",
+        25
+      ]
+    ]
+  },
+  "ImShinyai": {
+    "origin": [
+      [
+        "pages/index.tsx",
+        27
+      ]
+    ]
+  },
+  "WhoIFollowing": {
+    "origin": [
+      [
+        "pages/index.tsx",
+        28
+      ]
+    ]
+  }
+}
