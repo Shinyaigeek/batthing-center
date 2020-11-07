@@ -1,13 +1,29 @@
-import { styled } from "linaria/react";
+import { css } from "linaria";
 
 interface Props {
   content: string;
 }
 
-export const Marquee = ({ content }: Props) => {
-  return <Container>{content}</Container>;
-};
 
-const Container = styled.div`
-  color: blue;
+
+const marquee = css`
+
+animation: marquee 4s linear infinite;
+text-align: center;
+
+  @keyframes marquee {
+    from {
+      font-size: 16px;
+    }
+
+    to {
+      font-size: 48px;
+    }
+  }
 `;
+
+export const Marquee = ({ content }: Props) => {
+  return (
+      <div className={marquee}>{content}</div>
+  );
+};
