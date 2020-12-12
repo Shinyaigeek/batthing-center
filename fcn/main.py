@@ -58,9 +58,10 @@ def show_predictions(dataset=None, num=1):
 image = cv2.imread("./IMG_3062.JPG")
 
 image = cv2.resize(image, (224, 224))
-# image = np.asarray(image, dtype=np.float16)
+data = np.asarray(image, dtype=np.float16)
+image = np.expand_dims(data, axis=0)
 # image = np.reshape(image, (224, 224, 3))
 
 # p = model.predict(image)
 
-display([image, create_mask(model.predict(image))])
+display([data, create_mask(model.predict(image))])
