@@ -3,6 +3,7 @@ import numpy as np
 import cv2
 import json
 from matplotlib import pyplot as plt
+import os
 
 label_list = np.array([[0, 0, 0], [0, 0, 255], [255, 0, 0], [
                       255, 0, 0], [255, 255, 0], [255, 0, 255], [0, 255, 255]])
@@ -38,6 +39,7 @@ def one_hot(img, num):
 
 def image_generator(file_paths, init_size=None, normalization=True, gray=False):
     for file_path in file_paths:
+        print(file_path)
         if gray:
             image = cv2.imread(file_path, cv2.IMREAD_GRAYSCALE)
         else:
@@ -48,6 +50,9 @@ def image_generator(file_paths, init_size=None, normalization=True, gray=False):
             image = image / 255.0
 
         yield image
+
+def is_there_data(file_name):
+    return os.path.exists("data/json/" + file_name + ".json") & os.path.exists("data/image/" + file_name + ".JPG")
 
 
 def extract_images(paths_original, paths_segmented, init_size):
