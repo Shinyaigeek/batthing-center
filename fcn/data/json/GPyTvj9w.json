@@ -143,7 +143,7 @@
       "flags": {}
     },
     {
-      "label": "Co",
+      "label": "copper",
       "points": [
         [
           84.77725118483413,
@@ -175,7 +175,7 @@
       "flags": {}
     },
     {
-      "label": "Other",
+      "label": "other metals",
       "points": [
         [
           38.09478672985783,
@@ -203,7 +203,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           15.345971563981045,
@@ -227,7 +227,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           41.64928909952607,
@@ -295,7 +295,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           141.64928909952607,

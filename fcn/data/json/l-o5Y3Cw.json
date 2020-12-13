@@ -75,7 +75,7 @@
       "flags": {}
     },
     {
-      "label": "Con",
+      "label": "condenser",
       "points": [
         [
           146.34065934065933,
@@ -255,7 +255,7 @@
       "flags": {}
     },
     {
-      "label": "Co",
+      "label": "copper",
       "points": [
         [
           70.79120879120879,
@@ -287,7 +287,7 @@
       "flags": {}
     },
     {
-      "label": "Co",
+      "label": "copper",
       "points": [
         [
           108.7032967032967,
@@ -315,7 +315,7 @@
       "flags": {}
     },
     {
-      "label": "Co",
+      "label": "copper",
       "points": [
         [
           124.36263736263734,
@@ -343,7 +343,7 @@
       "flags": {}
     },
     {
-      "label": "Other",
+      "label": "other metals",
       "points": [
         [
           50.18681318681318,
@@ -371,7 +371,7 @@
       "flags": {}
     },
     {
-      "label": "Other",
+      "label": "other metals",
       "points": [
         [
           124.63736263736263,
@@ -395,7 +395,7 @@
       "flags": {}
     },
     {
-      "label": "Other",
+      "label": "other metals",
       "points": [
         [
           148.26373626373626,
@@ -419,7 +419,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           15.021978021978015,
@@ -443,7 +443,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           15.84615384615384,
@@ -475,7 +475,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           54.58241758241758,
@@ -575,7 +575,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           30.13186813186813,
@@ -607,7 +607,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           66.94505494505495,
@@ -631,7 +631,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           103.48351648351647,
@@ -655,7 +655,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           163.37362637362637,
@@ -683,7 +683,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           138.64835164835165,

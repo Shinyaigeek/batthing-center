@@ -55,7 +55,7 @@
       "flags": {}
     },
     {
-      "label": "Con",
+      "label": "condenser",
       "points": [
         [
           28.64376590330788,
@@ -383,7 +383,7 @@
       "flags": {}
     },
     {
-      "label": "Co",
+      "label": "copper",
       "points": [
         [
           74.19083969465649,
@@ -411,7 +411,7 @@
       "flags": {}
     },
     {
-      "label": "Co",
+      "label": "copper",
       "points": [
         [
           47.982188295165386,
@@ -435,7 +435,7 @@
       "flags": {}
     },
     {
-      "label": "Co",
+      "label": "copper",
       "points": [
         [
           52.30788804071247,
@@ -459,7 +459,7 @@
       "flags": {}
     },
     {
-      "label": "Other",
+      "label": "other metals",
       "points": [
         [
           4.979643765903305,
@@ -495,7 +495,7 @@
       "flags": {}
     },
     {
-      "label": "Other",
+      "label": "other metals",
       "points": [
         [
           34.75063613231552,
@@ -519,7 +519,7 @@
       "flags": {}
     },
     {
-      "label": "Other",
+      "label": "other metals",
       "points": [
         [
           61.722646310432566,
@@ -543,7 +543,7 @@
       "flags": {}
     },
     {
-      "label": "Other",
+      "label": "other metals",
       "points": [
         [
           17.70229007633587,
@@ -567,7 +567,7 @@
       "flags": {}
     },
     {
-      "label": "Other",
+      "label": "other metals",
       "points": [
         [
           89.96692111959288,
@@ -599,7 +599,7 @@
       "flags": {}
     },
     {
-      "label": "Other",
+      "label": "other metals",
       "points": [
         [
           100.14503816793894,
@@ -635,7 +635,7 @@
       "flags": {}
     },
     {
-      "label": "Other",
+      "label": "other metals",
       "points": [
         [
           98.61832061068702,
@@ -671,7 +671,7 @@
       "flags": {}
     },
     {
-      "label": "Other",
+      "label": "other metals",
       "points": [
         [
           109.55979643765903,
@@ -699,7 +699,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           142.12977099236642,
@@ -739,7 +739,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           101.92620865139949,
@@ -803,7 +803,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           73.68193384223918,
@@ -839,7 +839,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           93.27480916030532,
@@ -863,7 +863,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           60.704834605597966,
@@ -895,7 +895,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           2.6895674300254413,
@@ -939,7 +939,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           37.04071246819338,

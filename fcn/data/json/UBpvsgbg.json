@@ -71,7 +71,7 @@
       "flags": {}
     },
     {
-      "label": "Con",
+      "label": "condenser",
       "points": [
         [
           62.47132169576061,
@@ -379,7 +379,7 @@
       "flags": {}
     },
     {
-      "label": "Co",
+      "label": "copper",
       "points": [
         [
           4.865336658354117,
@@ -407,7 +407,7 @@
       "flags": {}
     },
     {
-      "label": "Co",
+      "label": "copper",
       "points": [
         [
           158.48129675810475,
@@ -431,7 +431,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           0.3765586034912758,
@@ -451,7 +451,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           6.610972568578553,
@@ -483,7 +483,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           12.845386533665838,
@@ -511,7 +511,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           31.548628428927685,
@@ -539,7 +539,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           11.847880299251877,
@@ -563,7 +563,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           37.28428927680798,
@@ -595,7 +595,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           68.45635910224439,

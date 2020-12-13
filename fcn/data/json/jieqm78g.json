@@ -51,7 +51,7 @@
       "flags": {}
     },
     {
-      "label": "Con",
+      "label": "condenser",
       "points": [
         [
           46.43915343915343,
@@ -419,7 +419,7 @@
       "flags": {}
     },
     {
-      "label": "Co",
+      "label": "copper",
       "points": [
         [
           8.343915343915342,
@@ -447,7 +447,7 @@
       "flags": {}
     },
     {
-      "label": "Co",
+      "label": "copper",
       "points": [
         [
           24.746031746031747,
@@ -471,7 +471,7 @@
       "flags": {}
     },
     {
-      "label": "Co",
+      "label": "copper",
       "points": [
         [
           103.58201058201058,
@@ -503,7 +503,7 @@
       "flags": {}
     },
     {
-      "label": "Co",
+      "label": "copper",
       "points": [
         [
           90.88359788359787,
@@ -531,7 +531,7 @@
       "flags": {}
     },
     {
-      "label": "Co",
+      "label": "copper",
       "points": [
         [
           112.57671957671957,
@@ -559,7 +559,7 @@
       "flags": {}
     },
     {
-      "label": "Other",
+      "label": "other metals",
       "points": [
         [
           48.82010582010581,
@@ -583,7 +583,7 @@
       "flags": {}
     },
     {
-      "label": "Other",
+      "label": "other metals",
       "points": [
         [
           23.687830687830683,
@@ -607,7 +607,7 @@
       "flags": {}
     },
     {
-      "label": "Other",
+      "label": "other metals",
       "points": [
         [
           119.98412698412696,
@@ -627,7 +627,7 @@
       "flags": {}
     },
     {
-      "label": "Other",
+      "label": "other metals",
       "points": [
         [
           5.698412698412696,
@@ -647,7 +647,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           0.9365079365079296,
@@ -675,7 +675,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           28.449735449735442,
@@ -723,7 +723,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           12.841269841269835,
@@ -755,7 +755,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           42.735449735449734,
@@ -807,7 +807,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           82.68253968253967,
@@ -855,7 +855,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           63.37037037037037,
@@ -883,7 +883,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           69.19047619047618,
@@ -959,7 +959,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           113.1058201058201,
@@ -983,7 +983,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           135.59259259259258,
@@ -1011,7 +1011,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           82.94708994708995,
@@ -1039,7 +1039,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           105.16931216931215,
@@ -1063,7 +1063,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           147.23280423280423,

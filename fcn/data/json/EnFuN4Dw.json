@@ -3,7 +3,7 @@
   "flags": {},
   "shapes": [
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           130.48535564853555,
@@ -99,7 +99,7 @@
       "flags": {}
     },
     {
-      "label": "Con",
+      "label": "condenser",
       "points": [
         [
           115.2133891213389,
@@ -123,7 +123,7 @@
       "flags": {}
     },
     {
-      "label": "Con",
+      "label": "condenser",
       "points": [
         [
           113.9581589958159,
@@ -207,7 +207,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           21.698744769874473,
@@ -335,7 +335,7 @@
       "flags": {}
     },
     {
-      "label": "Co",
+      "label": "copper",
       "points": [
         [
           63.12133891213389,
@@ -371,7 +371,7 @@
       "flags": {}
     },
     {
-      "label": "Co",
+      "label": "copper",
       "points": [
         [
           95.33891213389121,
@@ -399,7 +399,7 @@
       "flags": {}
     },
     {
-      "label": "Other",
+      "label": "other metals",
       "points": [
         [
           11.656903765690373,
@@ -423,7 +423,7 @@
       "flags": {}
     },
     {
-      "label": "Other",
+      "label": "other metals",
       "points": [
         [
           70.02510460251045,
@@ -451,7 +451,7 @@
       "flags": {}
     },
     {
-      "label": "Other",
+      "label": "other metals",
       "points": [
         [
           107.68200836820083,
@@ -475,7 +475,7 @@
       "flags": {}
     },
     {
-      "label": "Other",
+      "label": "other metals",
       "points": [
         [
           121.69874476987448,
@@ -495,7 +495,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           2.8702928870292865,
@@ -539,7 +539,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           37.38912133891213,
@@ -635,7 +635,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           64.7949790794979,
@@ -671,7 +671,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           96.17573221757321,
@@ -695,7 +695,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           132.99581589958157,
@@ -731,7 +731,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           96.59414225941421,

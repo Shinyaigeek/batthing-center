@@ -8,17 +8,16 @@ import numpy as np
 model = fcn(7)
 model.summary()
 
-# model.compile(loss="categorical_crossentropy", optimizer="adam")
+model.compile(loss="categorical_crossentropy", optimizer="adam")
 
-# img_size = (224, 224)
+img_size = (224, 224)
 
 # images_original, images_segmented = import_data(
 #     dir_original="data/image", dir_segmented="data/label", init_size=img_size)
 
 # model.fit(x=images_original,
 #           y=images_segmented,
-#           batch_size=1,
-#           epochs=3
+#           epochs=24
 #           )
 
 # model.save_weights("fcn.hdf5")
@@ -27,8 +26,10 @@ model.load_weights("fcn.hdf5")
 
 
 def create_mask(pred_mask):
+    print(pred_mask)
     pred_mask = tf.argmax(pred_mask, axis=-1)
     pred_mask = pred_mask[..., tf.newaxis]
+    print(pred_mask)
     return pred_mask[0]
 
 
@@ -60,8 +61,9 @@ image = cv2.imread("./IMG_3062.JPG")
 image = cv2.resize(image, (224, 224))
 data = np.asarray(image, dtype=np.float16)
 image = np.expand_dims(data, axis=0)
+print(image.shape)
 # image = np.reshape(image, (224, 224, 3))
 
 # p = model.predict(image)
 
-display([data, create_mask(model.predict(image))])
+display([create_mask(model.predict(image))])

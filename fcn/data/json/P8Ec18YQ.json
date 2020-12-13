@@ -3,7 +3,7 @@
   "flags": {},
   "shapes": [
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           17.180327868852444,
@@ -451,7 +451,7 @@
       "flags": {}
     },
     {
-      "label": "Co",
+      "label": "copper",
       "points": [
         [
           57.508196721311464,
@@ -475,7 +475,7 @@
       "flags": {}
     },
     {
-      "label": "Co",
+      "label": "copper",
       "points": [
         [
           130.2950819672131,
@@ -499,7 +499,7 @@
       "flags": {}
     },
     {
-      "label": "Co",
+      "label": "copper",
       "points": [
         [
           153.57377049180326,
@@ -523,7 +523,7 @@
       "flags": {}
     },
     {
-      "label": "Other",
+      "label": "other metals",
       "points": [
         [
           84.3934426229508,
@@ -583,7 +583,7 @@
       "flags": {}
     },
     {
-      "label": "Other",
+      "label": "other metals",
       "points": [
         [
           115.21311475409834,
@@ -619,7 +619,7 @@
       "flags": {}
     },
     {
-      "label": "Other",
+      "label": "other metals",
       "points": [
         [
           151.60655737704917,
@@ -655,7 +655,7 @@
       "flags": {}
     },
     {
-      "label": "Other",
+      "label": "other metals",
       "points": [
         [
           14.885245901639337,
@@ -679,7 +679,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           8.327868852459005,
@@ -703,7 +703,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           47.01639344262293,
@@ -747,7 +747,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           86.68852459016392,
@@ -775,7 +775,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           118.1639344262295,
@@ -799,7 +799,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           115.54098360655735,
@@ -839,7 +839,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           170.9508196721311,
@@ -863,7 +863,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           161.44262295081964,
@@ -887,7 +887,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           138.8196721311475,
@@ -911,7 +911,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           135.21311475409834,
@@ -943,7 +943,7 @@
       "flags": {}
     },
     {
-      "label": "Pla",
+      "label": "plastic",
       "points": [
         [
           40.13114754098359,

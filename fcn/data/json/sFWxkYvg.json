@@ -3,7 +3,7 @@
   "flags": {},
   "shapes": [
     {
-      "label": "Con",
+      "label": "condenser",
       "points": [
         [
           113.69230769230768,
@@ -27,7 +27,7 @@
       "flags": {}
     },
     {
-      "label": "Con",
+      "label": "condenser",
       "points": [
         [
           0.9519230769230731,

@@ -5,7 +5,7 @@ import json
 from matplotlib import pyplot as plt
 import os
 
-label_list = np.array([[0, 0, 0], [0, 0, 255], [255, 0, 0], [
+label_list = np.array([[0, 0, 0], [0, 0, 255], [0, 255, 0], [
                       255, 0, 0], [255, 255, 0], [255, 0, 255], [0, 255, 255]])
 label_keys = np.array(["_background_", "PCB",
                        "condenser", "copper", "other metals", "plastic", "wire"])
@@ -37,19 +37,23 @@ def one_hot(img, num):
     return one_hot
 
 
-def image_generator(file_paths, init_size=None, normalization=True, gray=False):
+def image_generator(file_paths, init_size=None, normalization=True, gray=False, json=False):
     for file_path in file_paths:
-        print(file_path)
-        if gray:
-            image = cv2.imread(file_path, cv2.IMREAD_GRAYSCALE)
-        else:
-            image = cv2.imread(file_path)
-        if init_size is not None and init_size != image.size:
-            image = cv2.resize(image, init_size)
-        if normalization:
-            image = image / 255.0
+        file_name_sp = file_path.split("/")
+        file_name = file_name_sp[len(file_name_sp) - 1].split(".JPG")[0]
+        if is_there_data(file_name):
+            if gray:
+                image = cv2.imread(file_path, cv2.IMREAD_GRAYSCALE)
+            else:
+                image = cv2.imread(file_path)
+            if init_size is not None and init_size != image.size:
+                image = cv2.resize(image, init_size)
+            if normalization:
+                image = image / 255.0
+            if json:
+                image = file_name
 
-        yield image
+            yield image
 
 def is_there_data(file_name):
     return os.path.exists("data/json/" + file_name + ".json") & os.path.exists("data/image/" + file_name + ".JPG")
@@ -75,11 +79,14 @@ def extract_images(paths_original, paths_segmented, init_size):
     print("Loading segmented images", end="", flush=True)
 
     sum = 0
-    for image in image_generator(paths_original, init_size):
-        raw_json = open("data/json/" + str(sum + 1) + ".json")
+    for file_name in image_generator(paths_original, init_size, json=True):
+        raw_json = open("data/json/" + file_name + ".json")
+        print(file_name)
+        image = cv2.imread("data/image/" + file_name + ".JPG")
         data = json.load(raw_json)
         for shape in data["shapes"]:
             label = shape["label"]
+            print(label)
             idx = np.where(label_keys == label)
             color = label_list[idx]
             contour = np.array(shape["points"], np.int32)
@@ -87,7 +94,8 @@ def extract_images(paths_original, paths_segmented, init_size):
             scolor = (int(color[0][0]), int(color[0][1]), int(color[0][2]))
             image = cv2.drawContours(image, [contour], -1, scolor, -1)
         image[image != 255] = 0
-        
+        image = cv2.resize(image, (224, 224))
+        cv2.imwrite("data/segmented/" + file_name + ".JPG", image)
         image = color_to_label(image, 7)
         image = one_hot(image, 7)
         sum += 1
