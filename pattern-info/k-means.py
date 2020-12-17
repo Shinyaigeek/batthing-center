@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 from time import sleep
 
 
-k = 2
+k = 4
 colors = ["pink", "yellow", "blue", "green", "cyan"]
 index_col = "species"
 factors = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width']
