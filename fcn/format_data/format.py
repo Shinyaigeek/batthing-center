@@ -38,22 +38,25 @@ def one_hot(img, num):
 
 
 def image_generator(file_paths, init_size=None, normalization=True, gray=False, json=False):
+    flag = False
     for file_path in file_paths:
         file_name_sp = file_path.split("/")
         file_name = file_name_sp[len(file_name_sp) - 1].split(".JPG")[0]
-        if is_there_data(file_name):
-            if gray:
-                image = cv2.imread(file_path, cv2.IMREAD_GRAYSCALE)
-            else:
-                image = cv2.imread(file_path)
-            if init_size is not None and init_size != image.size:
-                image = cv2.resize(image, init_size)
-            if normalization:
-                image = image / 255.0
-            if json:
-                image = file_name
+        if flag == False:
+            if is_there_data(file_name):
+                # flag = True
+                if gray:
+                    image = cv2.imread(file_path, cv2.IMREAD_GRAYSCALE)
+                else:
+                    image = cv2.imread(file_path)
+                if init_size is not None and init_size != image.size:
+                    image = cv2.resize(image, init_size)
+                if normalization:
+                    image = image / 255.0
+                if json:
+                    image = file_name
 
-            yield image
+                yield image
 
 def is_there_data(file_name):
     return os.path.exists("data/json/" + file_name + ".json") & os.path.exists("data/image/" + file_name + ".JPG")
@@ -108,7 +111,7 @@ def extract_images(paths_original, paths_segmented, init_size):
     images_segmented = np.delete(images_segmented, [0])
 
     images_original = np.asarray(images_original, dtype=np.float16)
-    images_segmented = np.asarray(images_segmented, dtype=np.uint8)
+    images_segmented = np.asarray(images_segmented, dtype=np.float32)
 
     images_original = np.reshape(
         images_original, (num, init_size[0], init_size[1], 3))
