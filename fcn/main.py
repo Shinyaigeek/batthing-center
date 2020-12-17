@@ -7,6 +7,7 @@ import numpy as np
 import tensorflow as tf
 import tensorflow.keras.backend as K
 import pydot_ng as pydot
+import glob2 as glob
 
 from tensorflow.keras.utils import plot_model
 
@@ -83,7 +84,6 @@ def create_mask(pred_mask):
                 # mask[i][j] = label_list[max_pooling_without_first(el) + 1]
 
             mask[i][j] = label_list[highest_idx]
-    print(mask)
     return mask
 
 
@@ -109,6 +109,74 @@ def show_predictions(dataset=None, num=1):
         display([sample_image, sample_mask,
                  create_mask(model.predict(sample_image[tf.newaxis, ...]))])
 
+def full_right(left, right):
+    for i in range(len(left)):
+        print(right[i])
+        if not (left[i] == right[i]):
+            return False
+    return True
+
+def get_presice():
+    paths = glob.glob("./data/presice/image/*")
+    precice = 0
+    recall = 0
+    for ab_path in paths:
+        file_name_sp = ab_path.split("/")
+        file_name = file_name_sp[len(file_name_sp) - 1].split(".JPG")[0]
+        image = cv2.imread("./data/presice/image/" + file_name + ".JPG")
+        image = cv2.resize(image, (224, 224))
+        image = np.asarray(image, dtype=np.float16)
+        image = np.expand_dims(image, axis=0)
+        segmented = cv2.imread("./data/presice/label/" + file_name + ".JPG")
+        segmented = cv2.resize(segmented, (224, 224))
+        segmented = np.asarray(segmented, dtype=np.float16)
+        segmented = np.expand_dims(segmented, axis=0)
+
+        print(image.shape, segmented.shape)
+
+        p = model.predict(image)
+        p = create_mask(p)
+
+        precice_per_file = 0
+        recall_per_file = 0
+
+        for label in label_list:
+            tp = 0
+            fp = 0
+            fn = 0
+            for i in range(len(p)):
+                col = p[i]
+                for j in range(len(col)):
+                    el = col[j]
+
+                    # print(el)
+
+                    if np.allclose(el, label):
+                        if np.allclose(segmented[0][i][j], el):
+                            tp += 1
+                        else:
+                            fp += 1
+                    if np.allclose(segmented[0][i][j], label):
+                        if not np.allclose(label, el):
+                            fn += 1
+            print(tp, fp, fn)
+            print("------")
+            if not(((tp + fp) == 0) | ((tp + fn) == 0)):
+                precice_per_file += tp / (tp + fp)
+                recall_per_file += tp / (tp + fn)
+
+        precice_per_file /= 7
+        recall_per_file /= 7
+
+        precice += precice_per_file
+        recall += recall_per_file
+    precice /= 3
+    recall /= 3
+
+    return 2 * recall * precice / (recall + precice)
+
+
+
 
 image = cv2.imread("./IMG_3062.JPG")
 
@@ -120,10 +188,13 @@ print(image.shape)
 
 p = model.predict(image)
 
+
+
+print(get_presice())
 # for i in range(len(p[0])):
 #     for j in range(len(p[0][i])):
 #         p[0][i][j][0] -= 0.09
 #         p[0][i][j][5] *= 0.6
 #         p[0][i][j][1] *= 0.7
 
-display([data, create_mask(p)])
+# display([data, create_mask(p)])
