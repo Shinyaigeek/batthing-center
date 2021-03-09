@@ -1,0 +1,9 @@
+{
+  "name": "nft",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@vercel/nft": "^0.9.6"
+  }
+}
